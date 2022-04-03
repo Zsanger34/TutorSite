@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp/Login</title>
+    <link rel="stylesheet" href="../CSS/SignUp.css">
+
+</head>
+<body>
+
+<div class="LogoBox">
+    <a class="Logo" href="../index.html">TutorSite</a>
+</div>
+
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title"> Login </h1>
+            <div class="form__title form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" name="username" class="form__input" id="nameL"autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" name="password" class="form__input" id="passL" autofocus placeholder="Password">
+                <div class="form__input-error-message" id="loginError"></div>
+            </div>
+            <button class="form__button" type="submitL" id="attemptSignIn">Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link" id="passReset">Forgot your password</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" id="linkCreateAccount">Dont have an account? Create account.</a>
+            </p>
+        </form>
+
+
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title"> Create Account </h1>
+            <div class="form__title form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" name="username" id="signupUsername" class="form__input"autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" name="email" class="form__input" id="email"autofocus placeholder="Email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" name="password" class="form__input" id="pass1"autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" name="password" class="form__input" id="pass2"autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submitS" id="attemptCreate">Continue</button>
+            <p class="form__text">
+                <a class="form__link" id="linkSignIn">Already have an account? Sign in.</a>
+            </p>
+        </form>
+
+        <form class="form form--hidden" id="resetPassword">
+            <div class="form__title form__message--error"></div>
+            <h1>Enter email to reset password</h1>
+            <div class="form__input-group">
+                <input type="text" name="email" class="form__input" id="linkResetEmail" autofocus placeholder="Email">
+            </div>
+            <button class="form__button" type="submit" id="sendEmail">Send Reset Email</button>
+        </form>
+    </div>
+
+</body>
+<script src="../JS/SignUp.js"></script>
+</html>

@@ -1,0 +1,41 @@
+:root{
+    --MainColor: #A5A5A5;
+    --BackGroundColor:#DBDBDB;
+}
+body{
+    background-color: var(--BackGroundColor);
+}
+
+h1{
+    text-align: center;
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding-left: 1em;
+
+
+}
+.references ul {
+    background: var(--MainColor);
+    text-align: center;
+    padding: 1em 3.01em;
+    width: 20%;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+    display: inline-block;
+
+}
+.Logo{
+    position:fixed;
+    top: .5em;
+    left:1em;
+    font-weight: bolder;
+    font-size: 2.5em;
+    text-decoration: none;
+    color:black;
+    margin:0;
+    padding:0;
+
+}
